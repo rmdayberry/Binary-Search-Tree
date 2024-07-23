@@ -137,17 +137,17 @@ class BinarySearchTree {
 
   bfs() {
     if (!this.root) return [];
-    const nodeValues = [];
+    const visitedNodes = [];
     const queue = [this.root];
 
-    while (queue.length > 0) {
+    while (queue.legnth > 0) {
       const node = queue.shift();
-      nodeValues.push(node.val);
+      visitedNodes.push(node.val);
 
       if (node.left) queue.push(node.left);
       if (node.right) queue.push(node.right);
     }
-    return nodeValues;
+    return visitedNodes;
   }
 
   /** Further Study!
