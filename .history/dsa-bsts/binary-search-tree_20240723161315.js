@@ -184,7 +184,7 @@ class BinarySearchTree {
   findSecondHighest() {
     const findMax = (node) => {
       while (node.right) {
-        node = node.right;
+        node.right;
       }
       return node;
     };
@@ -198,7 +198,7 @@ class BinarySearchTree {
       current = current.right;
     }
     if (current.left) {
-      return findMax(current.left).val;
+      return this.findMax(current.left).val;
     } else if (parent) {
       return parent.val;
     }
