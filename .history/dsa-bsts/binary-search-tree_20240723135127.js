@@ -160,7 +160,7 @@ class BinarySearchTree {
    * isBalanced(): Returns true if the BST is balanced, false otherwise. */
 
   isBalanced() {
-    const reportBalanced = (node) => {
+    const reportBalanced = (nose) => {
       if (!node) return [true, 0];
 
       const [leftBalanced, leftHeight] = reportBalanced(node.left);
